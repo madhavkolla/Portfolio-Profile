@@ -1,3 +1,3 @@
 # Resume
 
-# https://madhavkolla.github.io/resume/
+# https://madhavkolla.github.io/Resume/
