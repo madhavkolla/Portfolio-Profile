@@ -91,7 +91,7 @@
       color:rgba(0, 0, 0, 0.4);
     }
 
-    img{
-      margin:12px;
-      border-radius:25px;
+    .img-fluid{
+      margin:10px;
+      border-radius:20px;
   }
