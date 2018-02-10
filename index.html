@@ -289,47 +289,97 @@
         <p>A List of Projects i have been working on!!</p>
       </div>
       <!--  -->
-      <div class="card card-body py-5">
-        <h3>What have I built?</h3>
-        <div class="row">
-          <div class="col-md-4">
-            <a href="https://madhavkolla.github.io/Coffee-Shop-Landing-Page/" target="blank">
-              <img src="img/coffeeshop.png" alt="coffee-shop" class="img-fluid">
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="https://madhavkolla.github.io/TODO-LIST/" target="blank">
-              <img src="img/todolist.png" alt="todo-list" class="img-fluid">
-            </a>
-          </div>
+      <div class="main">
 
-          <div class="col-md-4">
-            <a href="https://madhavkolla.github.io/TODO-LIST/" target="blank">
-              <img src="https://user-images.githubusercontent.com/19499440/35992064-cfc1c746-0cce-11e8-9122-da5c0940ae26.png" alt="" class="img-fluid">
-            </a>
+      
+          <hr>
+          
+          
+          <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')">All Projects</button>
+            <button class="btn" onclick="filterSelection('html&css')"> HTML & CSS Projects</button>
+            <button class="btn" onclick="filterSelection('javascript')"> Java Script Projects</button>
+            <button class="btn" onclick="filterSelection('people')"> Jquery Projects</button>
+            <button class="btn" onclick="filterSelection('people')"> Angular2 Projects</button>
+            <button class="btn" onclick="filterSelection('people')"> React Projects</button><hr>
+            <button class="btn" onclick="filterSelection('people')"> React Projects</button>
+            <button class="btn" onclick="filterSelection('people')"> React Projects</button>
+            <button class="btn" onclick="filterSelection('people')"> React Projects</button>
           </div>
-
-          <div class="col-md-4">
-            <a href="https://madhavkolla.github.io/TODO-LIST/" target="blank">
-              <img src="https://user-images.githubusercontent.com/19499440/35992064-cfc1c746-0cce-11e8-9122-da5c0940ae26.png" alt="" class="img-fluid">
-            </a>
+          
+          <!-- Portfolio Gallery Grid -->
+          <div class="row">
+            <div class="column html&css">
+              <div class="content">
+                  <img src="img/coffeeshop.png" alt="Mountains" style="width:100%">
+                <h4>Mountains</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+            <div class="column javascript">
+              <div class="content">
+              <img src="img/todolist.png" alt="Lights" style="width:100%">
+                <h4>Lights</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+            <div class="column nature">
+              <div class="content">
+                  <img src="img/coffeeshop.png" alt="Mountains" style="width:100%">
+                <h4>Forest</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+            
+            <div class="column cars">
+              <div class="content">
+                  <img src="img/coffeeshop.png" alt="Mountains" style="width:100%">
+                <h4>Retro</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+            <div class="column cars">
+              <div class="content">
+                  <img src="img/coffeeshop.png" alt="Mountains" style="width:100%">
+                <h4>Fast</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+            <div class="column cars">
+              <div class="content">
+                  <img src="img/coffeeshop.png" alt="Mountains" style="width:100%">
+                <h4>Classic</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+          
+            <div class="column people">
+              <div class="content">
+                  <img src="img/coffeeshop.png" alt="Mountains" style="width:100%">
+                <h4>Girl</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+            <div class="column people">
+              <div class="content">
+                  <img src="img/coffeeshop.png" alt="Mountains" style="width:100%">
+                <h4>Man</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+            <div class="column people">
+              <div class="content">
+                  <img src="img/coffeeshop.png" alt="Mountains" style="width:100%">
+                <h4>Woman</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+          <!-- END GRID -->
           </div>
-
-          <div class="col-md-4">
-            <a href="https://madhavkolla.github.io/TODO-LIST/" target="blank">
-              <img src="https://user-images.githubusercontent.com/19499440/35992064-cfc1c746-0cce-11e8-9122-da5c0940ae26.png" alt="" class="img-fluid">
-            </a>
+          
+          <!-- END MAIN -->
           </div>
-
-          <div class="col-md-4">
-            <a href="https://madhavkolla.github.io/TODO-LIST/" target="blank">
-              <img src="https://user-images.githubusercontent.com/19499440/35992064-cfc1c746-0cce-11e8-9122-da5c0940ae26.png" alt="" class="img-fluid">
-            </a>
-          </div>
-
-
-        </div>
-      </div>
+                </div>
     </div>
 
     <!-- CONTACT -->
@@ -401,6 +451,51 @@
         width: jQuery(this).attr('data-percent')
       }, 6000);
     });
+
+    filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
   </script>
 </body>
 
