@@ -99,6 +99,35 @@
 
 
 
+  
+   
+body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+}
+
+/* Center website */
+/* .main {
+    max-width: 1000px;
+    margin: auto;
+} */
+
+/* h1 {
+    font-size: 50px;
+    word-break: break-all;
+} */
+
+.row no-gutters {
+    margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row no-gutters,
+.row > .column {
+    padding: 8px;
+}
+
 /* Create three equal columns that floats next to each other */
 .column {
     float: left;
@@ -141,6 +170,3 @@
   background-color: #666;
   color: white;
 }
-
-
-
