@@ -168,7 +168,7 @@ h1, h2, h3, h4, h5, h6{
    
 /* Global */
 a:link {
-	color: #61bb46;
+	color: #007bff;
 	text-decoration: none;
 }
 a:hover {
@@ -176,173 +176,112 @@ a:hover {
 	text-decoration: none;
 }
 a:visited {
-	color: #61bb46;
+	color: #007bff;
 	text-decoration: none;
 }
-/* 
-/* Computer */
-.grid_4 { width: 32%; } 
-.grid_6 { width: 49%; } 
-.grid_8 { width: 66%; } 
-.grid_12 { width: 100%; } 
 
-.grid_4,
-.grid_6,
-.grid_8,
-.grid_12 {
-	margin: 0 2% 1% 0;
-	float: left;
-	display: block;
-}
- */
-
-.container{
-  width: 90%; 
-	max-width: 1000px;
-	margin: auto;
-	
+/* CSS for card-flip adapted from David Walsh's code and uraimo's code (in the comments) at http://davidwalsh.name/css-flip */
+.flip-container {
+  cursor: pointer;
+  margin: 0 auto;
+  -webkit-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
 }
 
-/* Mobile */
-@media screen and (max-width : 480px) {
-
-.grid_4,
-.grid_6,
-.grid_8,
-.grid_12 {
-	width:100%;
+.flip-container.flip .flipper {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
 }
 
+.flip-container, .front, .back {
+  border-radius: 10px;
+  width: 320px;
+  height: 480px;
 }
 
-/* Slide 5 */
-#slide5 {
-	padding: 20px 0 100px 0;
-	background-color: #ffffff;
+.flipper {
+  -webkit-transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transition: 0.6s;
+  -moz-transform-style: preserve-3d;
+  -o-transition: 0.6s;
+  -o-transform-style: preserve-3d;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
 }
-.contactmap {
-	background: #f48022;
-	border-radius: 4px;
+
+.front, .back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-#slide5 h2 {
-	margin: 13px 0 0 30px;
-	color: #fff;
-	font-size: 1.5em;
+
+.front {
+  background: #fafafa;
+  border: 1px solid #dbdbdb;
+  -webkit-box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  /* front pane, placed above back */
+  z-index: 2;
+  /* for firefox 31 */
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
 }
-#slide5 p {
-	line-height: 150%;
-	color: #fff;
-	padding: 5px 0 0 30px;
+.front #mark {
+  margin: 9em auto;
+  max-width: 200px;
 }
-.contactype {
-	position: relative;
-	cursor: pointer;
-	color: #fff;
-	text-shadow: 0 1px 1px rgba(0,0,0,0.1);
-	text-align: center;
-	background-color: #c3c3c3;
-	border-radius: 5px;
-	height: 100px;
-	float: left;
-	transition: all .3s ease-in;
+
+.back {
+  background: #4bc970;
+  border: 1px solid #32a554;
+  -webkit-box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  padding: 1.5em;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
-.contactype p {
-	width: 100%;
-	text-align: center;
-	position: absolute;
-	bottom: -7.5px;
-	left: 0;
-	padding: 0 !important;
+.back h1 {
+  color: #fff;
+  font-family: "museo-slab", "jaf-bernino-sans-comp";
+  font-size: 2em;
+  letter-spacing: -1px;
+  margin-bottom: 0.1em;
+  margin-top: 0.5em;
+  text-transform: none;
 }
-.contactype:hover,.contactype.active {
-	background-color: #f48022;
+.back h2 {
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
 }
-.contactype div {
-	font-size: 4em;
-	position: absolute;
-	width: 100%;
-	left: 0;
-	top: 0;
-	transition: all .2s ease-in;
+
+.icon-margin-right {
+  margin-right: 1em;
 }
-.contactmap .grid_8.omega .grid_6 {
-	margin: 40px 0 0 220px;
+
+#card-pic {
+  border: 7px solid rgba(255, 255, 255, 0.5);
+  max-width: 160px;
 }
-.contactmap .grid_8.omega .grid_6 .btn {
-	margin-top: 10px;
-	border: 1px solid rgba(0,0,0,.1);
-	margin-left: 0;
+
+#attribution {
+  color: #bababa;
+  font-size: 0.6em;
 }
-#contact-mail .grid_6.omega {
-	padding-top: 40px;
+#attribution a {
+  color: #bababa;
 }
-.btn {
-	width:100%;
-	min-width: 60px;
-	max-width: 240px;
-	display: inline-block;
-	padding-left: 56px;
-	color: #626263;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-	background-color: #fff;
-	padding: 16px 24px 17px 24px;
-	font-size: 10px;
-	font-weight: bold;
-	text-transform: uppercase;
-	letter-spacing: 0.2em;
-	text-shadow: none;
-	line-height: 20px;
-	text-align: center;
-	border-radius: 5px;
-	margin-left: 2.5em;
+#attribution a:hover, #attribution a:active {
+  color: #7b7b7b;
 }
-.btn span {
-	font-size: 1em;
-}
-.contactmap {
-	height: 500px;
-	width:100%;
-	margin-bottom: 10%;
-}
-.contactmap .grid_8.omega {
-	background-color: #fff;
-	height: 100%;
-	display: block;
-	overflow: hidden;
-	margin: 0;
-	padding: 0;
-}
-.submit {
-	display: none;
-	margin: 0 auto;
-	width: auto;
-	font-size: 16px;
-	font-weight: 400;
-	color: #fff;
-	padding: 15px 21px;
-	border: 1px solid rgba(255,255,255,0.4);
-	background: transparent;
-	border-radius: 9px;
-	text-decoration: none;
-	white-space: nowrap;
-	transition: border-color .4s;
-}
-.submit:hover {
-	color: #fff;
-	border-color: #fff;
-}
-#contact-mailClick.active div {
-	left: -440px !important;
-}
-#contact-mailClick.active div {
-	font-size: 10em;
-	color: #c3c3c3;
-	top: 145px;
-	left: -440px;
-}
-#contact-phoneClick.active div {
-	font-size: 10em;
-	color: #c3c3c3;
-	top: 145px;
-	left: -315px;
+
+.back {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
 }
