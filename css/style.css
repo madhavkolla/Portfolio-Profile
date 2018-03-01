@@ -196,7 +196,9 @@ a:visited {
 
 .flip-container, .front, .back {
   border-radius: 10px;
-  width: 320px;
+  width: 100%;
+  min-width: 200px;
+  max-width: 350px;
   height: 480px;
 }
 
