@@ -91,7 +91,9 @@ h1, h2, h3, h4, h5, h6{
   opacity: 0.8;
   cursor: pointer; }
 
-@media (min-width: 1199px) {
+  /*skill bar  */
+
+  @media (min-width: 1199px) {
   .port-item {
     padding: 3em !important; } }
 
