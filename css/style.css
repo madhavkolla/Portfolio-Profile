@@ -190,7 +190,6 @@ a:visited {
 	text-decoration: none;
 }
 
-
  @-webkit-keyframes wrench {
   0% {
     -webkit-transform: rotate(-12deg);
@@ -1060,6 +1059,7 @@ a:visited {
   animation: burst 3s infinite linear;
 }
 
+/* resume wrapper */
 
 .wrapper {
   background-color: #fff;
