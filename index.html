@@ -70,8 +70,8 @@
     <div id="home" class="collapse show">
       <div class="card card-body bg-primary text-white py-5">
         <h2>Welcome to my page</h2>
-        <p class="lead"> I am a UI Developer with 4 years of experience in software development includes Analysis, Design and Development
-          of Web-based Applications and Enterprise level applications. .</p>
+        <h4 class="lead"> I am a UI Developer with 4 years of experience in software development includes Analysis, Design and Development
+          of Web-based Applications and Enterprise level applications. .</h4>
       </div>
       <div class="card card-body py-5">
         <h1>My Skills Bar</h1>
@@ -240,7 +240,7 @@
     <div id="resume" class="collapse">
       <div class="card card-body bg-success text-white py-5">
         <h2>My Resume</h2>
-        <p>My previous associations & opportunities...</p>
+        <h4>My previous associations & opportunities...</h4>
       </div>
       <div class="card card-body py-5">
         <div class="wrapper">
@@ -250,8 +250,8 @@
               <div class="each-event">
                 <div class="event-description">
                   <h3>Comcast(PA)</h3>
-                  <h4>UI DEVELOPER</h4>
-                  <h6>August 2016 - Present</h6>
+                  <h4>UI Developer</h4>
+                  <h5>August 2016 - Present</h5>
                   <p> Worked on a web application using HTML, CSS, Bootstrap, JavaScript and its frameworks.</p>
                 </div>
               </div>
@@ -259,8 +259,8 @@
               <div class="each-event">
                 <div class="event-description">
                   <h3>Bharat Synergy- India</h3>
-                  <h4>JUNIOR WEB DEVELOPER</h4>
-                  <h6>May 2014 - December 2014</h6>
+                  <h4>Junior Web Developer</h4>
+                  <h5>May 2014 - August 2014</h5>
                   <p>Worked on developing single page applications using Java Script frameworks.</p>
                 </div>
               </div>
@@ -268,8 +268,8 @@
               <div class="each-event">
                 <div class="event-description">
                   <h3>Bharat Synergy-India</h3>
-                  <h4>JUNIOR WEB DEVELOPER</h4>
-                  <h6>June 2013 - December 2013</h6>
+                  <h4>Junior Web Developer</h4>
+                  <h5>June 2013 - December 2013</h5>
                   <p> Developed a new website with complete modern design to represent various products of the company.</p>
                 </div>
               </div>
@@ -277,9 +277,9 @@
               <div class="each-event">
                 <div class="event-description">
                   <h3>South Central Railways-India</h3>
-                  <h4>WEB DEVELOPER- INTERN</h4>
-                  <h6>May 2014 - December 2014</h6>
-                  <P>Worked on a web application using HTML, CSS, Bootstrap, JavaScript and its frameworks.</P>
+                  <h4>Junior Web Developer - Intern</h4>
+                  <h5>May 2014 - August 2012</h5>
+                  <p>Worked on a web application using Java, HTML, CSS, Bootstrap, JavaScript and its frameworks.</p>
                 </div>
               </div>
 
@@ -292,16 +292,16 @@
                 <div class="event-description">
                   <h3>UNIVERSITY OF HOUSTON - CLEARLAKE</h3>
                   <h4>MASTERS IN SOFTWARE ENGINEERING</h4>
-                  <h6>August 2015 - DECEMBER 2016</h6>
+                  <h5>January 2015 - DECEMBER 2016</h5>
                   <p> GPA : 3.30/4.0</p>
                 </div>
               </div>
 
               <div class="each-event">
                 <div class="event-description">
-                  <h3>KL UNIVERSITY</h3>
+                  <h3>KL UNIVERSITY - India</h3>
                   <h4>BACHELORS IN COMPUTER SCIENCE</h4>
-                  <h6>JUNE 2010 - MAY 2014</h6>
+                  <h5>JUNE 2010 - MAY 2014</h5>
                   <p>CGPA : 7.25/10</p>
                 </div>
               </div>
@@ -323,120 +323,89 @@
         <div id="work" class="collapse">
           <div class="card card-body bg-warning py-5">
             <h3>My Portfolio</h3>
-            <p>A List of Projects i have been working on!!</p>
+            <h4>A List of Projects i have been working on!!</h4>
           </div>
           <!--  -->
           <div class="card card-body py-5">
-            <div id="myBtnContainer">
-              <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-              <button class="btn" onclick="filterSelection('htmlcss')"> HTML, CSS & Java Script</button>
-              <button class="btn" onclick="filterSelection('reactjs')"> React JS</button>
-              <button class="btn" onclick="filterSelection('angular')"> ANGULAR 2</button>
+            <div class="toolbar mb2 mt2">
+              <button class="btn fil-cat" href="" data-rel="all">All</button>
+              <button class="btn fil-cat" data-rel="web">HTML, CSS & JAVASCRIPT</button>
+              <button class="btn fil-cat" data-rel="flyers">REACTS JS</button>
+              <button class="btn fil-cat" data-rel="bcards">ANGULAR</button>
             </div>
-            <br>
-            <!-- Portfolio Gallery Grid -->
-            <div class="row no-gutters">
-              <div class="column htmlcss">
-                <div class="content">
-                  <a href="https://madhavkolla.github.io/JAVASCRIPT-BUDGET-APP/" target="blank">
-                    <img src="img/budgetapp.png" alt="budgetapp" style="width:100%">
-                  </a>
-                  <h4>Javascript Budget App</h4>
-                  <p>Completely developed in HTML, CSS & Javascript</p>
-                </div>
+
+            <div style="clear:both;"></div>
+            <div id="portfolio">
+              <div class="tile scale-anm web all">
+                <a href="https://madhavkolla.github.io/JAVASCRIPT-BUDGET-APP/" target="blank">
+                  <img src="img/budgetapp.png" alt="budgetapp" />
+                </a>
               </div>
-              <div class="column htmlcss">
-                <div class="content">
-                  <a href="https://madhavkolla.github.io/Coffee-Shop-Landing-Page/" target="blank">
-                    <img src="img/coffeeshop.png" alt="coffeeshop" style="width:100%">
-                  </a>
-                  <h4>Coffee Shop Landing Page</h4>
-                  <p>A Responsive template developed in HTML and CSS</p>
-                </div>
+              <div class="tile scale-anm bcards all">
+                <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/jti-icons_08-300x172.jpg" alt="" />
               </div>
-              <div class="column htmlcss">
-                <div class="content">
-                  <a href="https://madhavkolla.github.io/TODO-LIST/" target="blank">
-                    <img src="img/todolist.png" alt="todolist" style="width:100%">
-                  </a>
-                  <h4>TODO LIST</h4>
-                  <p>TODO application is completely developed in HTML and CSS</p>
-                </div>
+              <div class="tile scale-anm web all">
+                <a href="https://madhavkolla.github.io/Coffee-Shop-Landing-Page/" target="_blank">
+                <img src="img/coffeeshop.png" alt="coffeeshop" />
+              </a>
               </div>
-              <div class="column htmlcss">
-                <div class="content">
-                  <a href="https://madhavkolla.github.io/HTML-CSS-COLOR-GAME/" target="blank">
-                    <img src="img/colorgame.png" alt="colorgame" style="width:100%">
-                  </a>
-                  <h4>Color Game</h4>
-                  <p>Completely developed in HTML,CSS and Javascript</p>
-                </div>
+              <div class="tile scale-anm web all">
+                <a href="https://madhavkolla.github.io/HTML-CSS-COLOR-GAME/" target="_blank">
+                  <img src="img/colorgame.png" alt="colorgame" />
+                </a>
               </div>
-              <div class="column htmlcss">
-                <div class="content">
-                  <a href="https://madhavkolla.github.io/password-generator/" target="blank">
-                    <img src="img/passwordgenerator.png" alt="passwordgenerator" style="width:100%">
-                  </a>
-                  <h4>Password Generator</h4>
-                  <p>Developed in complete HTML, CSS and Javascript.</p>
-                </div>
+              <div class="tile scale-anm flyers all">
+                <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97190&w=350&h=190" alt="" />
               </div>
-              <div class="column htmlcss">
-                <div class="content">
-                  <a href="https://madhavkolla.github.io/css-image-slider/" target="blank">
-                    <img src="img/imageslider.png" alt="imageslider" style="width:100%">
-                  </a>
-                  <h4>Image Slider</h4>
-                  <p>Completely developed in CSS.</p>
-                </div>
+              <div class="tile scale-anm bcards all">
+                <img src="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97290&w=200&h=290" alt="" />
               </div>
-              <div class="column htmlcss">
-                <div class="content">
-                  <a href="https://madhavkolla.github.io/Ticky-Clock/" target="blank">
-                    <img src="img/tickyclock.png" alt="tickyclock" style="width:100%">
-                  </a>
-                  <h4>Ticky Clock</h4>
-                  <p>Developed in HTML, CSS and Javascript</p>
-                </div>
+              <div class="tile scale-anm flyers all">
+                <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/jti-icons_08-300x172.jpg" alt="" />
               </div>
-              <div class="column javascript">
-                <div class="content">
-                  <a href="https://madhavkolla.github.io/Coffee-Shop-Landing-Page/" target="blank">
-                    <img src="img/imageslider.png" alt="Mountains" style="width:100%">
-                  </a>
-                  <h4>Retro</h4>
-                  <p>Lorem ipsum dolor..</p>
-                </div>
+              <div class="tile scale-anm flyers all">
+                <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/transmission_01-300x300.jpg" alt="" />
               </div>
-              <div class="column reactjs">
-                <div class="content">
-                  <a href="https://madhavkolla.github.io/Coffee-Shop-Landing-Page/" target="blank">
-                    <img src="img/coffeeshop.png" alt="Mountains" style="width:100%">
-                  </a>
-                  <h4>Girl</h4>
-                  <p>Lorem ipsum dolor..</p>
-                </div>
-              </div>
-              <div class="column angular">
-                <div class="content">
-                  <a href="https://madhavkolla.github.io/Coffee-Shop-Landing-Page/" target="blank">
-                    <img src="img/coffeeshop.png" alt="Mountains" style="width:100%">
-                  </a>
-                  <h4>Man</h4>
-                  <p>Lorem ipsum dolor.</p>
-                </div>
-              </div>
-              <div class="column angular">
-                <div class="content">
-                  <a href="https://madhavkolla.github.io/Coffee-Shop-Landing-Page/" target="blank">
-                    <img src="img/coffeeshop.png" alt="Mountains" style="width:100%">
-                  </a>
-                  <h4>Woman</h4>
-                  <p>Lorem ipsum dolor..</p>
-                </div>
-              </div>
-              <!-- END GRID -->
+              <div class="tile scale-anm web all">
+                <a href="https://madhavkolla.github.io/TODO-LIST/" target="_blank">
+                <img src="img/todolist.png" alt="todolist" />
+              </a>
             </div>
+              <div class="tile scale-anm flyers all">
+                <img src="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97290&w=200&h=290" alt="" />
+              </div>
+              <div class="tile scale-anm web all">
+               <a href="https://madhavkolla.github.io/css-animated-image-gallery/" target="_blank">
+                 <img src="img/imagegallery.png" alt="imagegallery" />
+               </a>
+              </div>
+              <div class="tile scale-anm bcards all">
+                <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/15-dia_1092-1-300x300.jpg" alt="" />
+              </div>
+              <div class="tile scale-anm web all">
+                <a href="https://madhavkolla.github.io/css-image-slider/" target="_blank">
+                  <img src="img/imageslider.png" alt="image slider" />
+                </a>
+              </div>
+              <div class="tile scale-anm bcards all">
+                <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/emi_haze-300x201.jpg" alt="" />
+              </div>
+              <div class="tile scale-anm web all">
+                <a href="https://madhavkolla.github.io/password-generator/" target="_blank">
+                <img src="img/passwordgenerator.png" alt="password generator" />
+              </a>
+            </div>
+              <div class="tile scale-anm web all">
+                <a href="https://madhavkolla.github.io/Ticky-Clock/" target="_blank">
+                  <img src="img/tickyclock.png" alt="tickyclock" />
+                </a>
+              </div>
+              <div class="tile scale-anm bcards all">
+                <img src="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97290&w=200&h=290" alt="" />
+              </div>
+            </div>
+
+            <div style="clear:both;"></div>
             <!-- END MAIN -->
           </div>
         </div>
@@ -446,7 +415,7 @@
             <!-- <h2>Contact</h2> -->
 
             <h1>Get in Touch</h1>
-            <p>Feel free to contact me</p>
+            <h4>Feel free to contact me</h4>
           </div>
           <div class="card card-body py-5">
             <div class="form-group">
@@ -462,7 +431,8 @@
               <br>
               <h3>OR</h3>
               <br>
-              <p>Please fill the below form!!</p>
+              <h2>Please fill the below form!!</h2>
+              <br>
               <form method="POST" action="https://formspree.io/kollavmadhav@gmail.com">
                 <div class="form-group">
                   <div class="input-group input-group-lg">
@@ -518,6 +488,20 @@
           $('.collapse').collapse('hide');
         });
 
+        $(function () {
+          var selectedClass = "";
+          $(".fil-cat").click(function () {
+            selectedClass = $(this).attr("data-rel");
+            $("#portfolio").fadeTo(100, 0.1);
+            $("#portfolio div").not("." + selectedClass).fadeOut().removeClass('scale-anm');
+            setTimeout(function () {
+              $("." + selectedClass).fadeIn().addClass('scale-anm');
+              $("#portfolio").fadeTo(300, 1);
+            }, 300);
+
+          });
+        });
+
         $(document).on('click', '[data-toggle="lightbox"]', function (event) {
           event.preventDefault();
           $(this).ekkoLightbox();
@@ -561,16 +545,16 @@
           element.className = arr1.join(" ");
         }
 
-        // Add active class to the current button (highlight it)
-        var btnContainer = document.getElementById("myBtnContainer");
-        var btns = btnContainer.getElementsByClassName("btn");
-        for (var i = 0; i < btns.length; i++) {
-          btns[i].addEventListener("click", function () {
-            var current = document.getElementsByClassName("active");
-            current[0].className = current[0].className.replace(" active", "");
-            this.className += " active";
-          });
-        }
+        // // Add active class to the current button (highlight it)
+        // var btnContainer = document.getElementById("myBtnContainer");
+        // var btns = btnContainer.getElementsByClassName("btn");
+        // for (var i = 0; i < btns.length; i++) {
+        //   btns[i].addEventListener("click", function () {
+        //     var current = document.getElementsByClassName("active");
+        //     current[0].className = current[0].className.replace(" active", "");
+        //     this.className += " active";
+        //   });
+        // }
 
         $('.flip-container').click(function () {
           $('.flip-container').toggleClass('flip');
@@ -596,6 +580,8 @@
 
           });
         };
+
+
       </script>
 </body>
 
