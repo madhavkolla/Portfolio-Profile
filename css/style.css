@@ -1199,14 +1199,34 @@ a:visited {
 
 /* font */
 
-h2{
+h1, h2{
   font-family: 'monoton';
   font-size: 40px;
 }
 
+h1{
+  color: rgb(255, 255, 255);
+  -webkit-animation: h1 0.40s infinite; 
+  animation: h1 0.50s infinite;
+}
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes h1 {
+    0%   {text-shadow: 0 0 6px #FFF;}
+    100%  {text-shadow: 0 0 0px #000;}
+}
+
+/* Internet Explorer */
+
+
+@keyframes h1 {
+    0%   {text-shadow: 0 0 6px #FFF;}
+    100%  {text-shadow: 0 0 0px #000;}
+}
 
 h2 {
-  color: rgb(255, 255, 255);
+  color: rgb(35, 154, 59);
   -webkit-animation: h2 0.40s infinite; 
   animation: h2 0.50s infinite;
 }
