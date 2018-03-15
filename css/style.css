@@ -1199,10 +1199,16 @@ a:visited {
 
 /* font */
 
-h1, h2{
+h1 {
+  font-family: 'times';
+  font-size: 40px;
+}
+
+h2 {
   font-family: 'monoton';
   font-size: 40px;
 }
+
 
 h1{
   color: rgb(255, 255, 255);
