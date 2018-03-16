@@ -1372,7 +1372,7 @@ h3 {
 }
 
 .experience {
-  border-left: 3px solid #009688;
+  border-left: 3px solid #28a745;
   padding: 0 30px;
   margin-left: 185px;
 }
@@ -1395,7 +1395,7 @@ h3 {
   height: 22px;
   border-radius: 50%;
   background: #000000;
-  border: 3px solid #009688;
+  border: 3px solid #28a745;
 }
 .experience .item::after {
   content: "";
@@ -1405,10 +1405,10 @@ h3 {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #009688;
+  background: #28a745;
 }
 .experience .company-name {
-  color: #009688;
+  color: #28a745;
 }
 .experience .location {
   position: absolute;
@@ -1424,7 +1424,7 @@ h3 {
   top: 0;
 }
 .experience .job-info .title {
-  color: #009688;
+  color: #28a745;
 }
 @media (max-width: 767px) {
   .experience .job-info {
