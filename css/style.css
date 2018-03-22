@@ -76,8 +76,6 @@ h1, h2, h3, h4, h5, h6{
   opacity: 0.8;
   cursor: pointer; }
 
-  
-
   /*skill bar  */
 
   @media (min-width: 1199px) {
@@ -1299,7 +1297,3 @@ h2 {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
 }
-
-
-
-
