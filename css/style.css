@@ -1071,6 +1071,9 @@ a:visited {
     width: 100%;
     height: auto;
     margin-bottom: 1rem;
+    border-style: outset;
+    color: rgba(255, 255, 255, 0.5);
+    border-width: 5px;
   
 }
 
